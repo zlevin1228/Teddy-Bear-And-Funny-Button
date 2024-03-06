@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Teddy Bear</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="bear.ico">
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <div class="leftEar"></div> 
+        <div class="rightEar"></div>
+        <div class="leftEye"></div> 
+        <div class="rightEye"></div> 
+        <div class="snout"></div> 
+        <div class="nose">
+          <script>
+            var audio = new Audio("/horn.wav ");
+            audio.oncanplaythrough = function ( ) { }
+            audio.onended = function ( ) { }
+          </script> <input type="button" src="file://C:/horn.wav" onclick="audio.play ( )">
+        </div> 
+        <div class="mouth"></div> 
+      </div> 
+    </div> 
+    <div class="face">
+          <audio id="audio_play">
+            <source src="606 - Dolla Z.ogg" type="audio/ogg" />
+          </audio>
+          <img class="mehead" onClick="document.getElementById('audio_play').play(); return false;"
+            ondblclick="document.getElementById('audio_play').pause(); return false;" src="zachary.png">
+        </div>
+
+  </body>
+</html>
